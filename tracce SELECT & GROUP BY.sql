@@ -8,7 +8,7 @@ WHERE YEAR(`date_of_birth`) = 1990;
 
 -- 2. Selezionare tutti i corsi che valgono più di 10 crediti (479)
 
-SELECT `name` as 'corso', `cfu` as 'crediti' 
+SELECT `name` AS 'corso', `cfu` AS 'crediti' 
 FROM `courses`
 WHERE `cfu` > 10;
 
@@ -43,6 +43,9 @@ WHERE `level` = 'magistrale';
 
 
 -- 7. Da quanti dipartimenti è composta l'università? (12)
+
+SELECT COUNT(*) AS 'Numero dipartimenti' 
+FROM `departments`;
 
 
 -- 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
